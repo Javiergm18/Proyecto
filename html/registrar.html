@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../css/registro.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="formRegistro">
+            <div class="formulario">
+                
+                <form action="" class="registro" autocomplete="off">
+                    <a href="../html/index.html"><img href="../html/index.html" class="centrar" src="../img/banner.jpg" alt="" height="90"></a>
+                    <p id="p1">Crear nueva cuenta</p>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre..." required>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido..." required>
+                    <p>Información de inicio de sesión</p>
+                    <input type="email" id="correo" name="correo" placeholder="Email..." required>
+                    <input type="password" id="clave" name="clave" placeholder="Contraseña..." required>
+                    <input type="password" id="clave2" name="clave2" placeholder="Repetir contraseña..." required>
+                    <div class="g-recaptcha" id="cap" data-sitekey="6LfpQ7UhAAAAAICNqjphbcbWQzBxgFljPL4nL7tz"></div>
+                    <input type="submit" id="btn" value="Crear cuenta" class="cuentaNormal">
+                    <input type="submit" id="btn" value="Acceder con Facebook" class="cuentaFacebook">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

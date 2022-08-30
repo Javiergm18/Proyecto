@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesion</title>
+    <link rel="stylesheet" href="../css/registro.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://kit.fontawesome.com/48c1f129e4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="formulario">
+            <form action="" class="inicio">
+                <a href="../html/index.html"><img href="../html/index.html" class="centrar" src="../img/banner.jpg" alt="" height="90"></a>
+                <div class="conjunto">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="correo" id="correo" placeholder="Correo...">
+                </div>
+                <div class="conjunto">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="clave" id="clave" placeholder="Contraseña...">
+                </div>
+                <a href="" id="contraseña">¿Has olvidado contraseña?</a>
+                <div class="g-recaptcha" id="cap" data-sitekey="6LfpQ7UhAAAAAICNqjphbcbWQzBxgFljPL4nL7tz"></div>
+                
+                <div class="botones">
+                    <input class="cuentaNormal" id="accederNormal" type="submit" value="Acceder">
+                    <input class="cuentaFacebook" id="accederNormal" type="submit" value="Acceder con Facebook">
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>

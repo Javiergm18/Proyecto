@@ -1,0 +1,123 @@
+@import url(../css/main.css);
+@import url(../css/barra_precio.css);
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: "WorkSans-Regular", Arial, Helvetica, sans-serif;
+  background: #fff;
+  /*  background-blend-mode: darken; para agregar el color a la imagen de fondo
+  background-size: cover;
+  background-attachment: fixed; */ }
+
+.contenedor {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  /* flex-direction: row; */
+  /*se pone un div a lado del otro*/
+  flex-wrap: wrap;
+  /*los elementos que no caben se pongan abajo*/
+  margin-bottom: 30px;
+  /* ----------------------> Filtro Precio */ }
+  .contenedor header {
+    width: 90%;
+    padding: 10px 0;
+    margin: 10px 0;
+    display: flex;
+    /*para que los elementos se pongan uno del lado del otro*/
+    flex-direction: row;
+    /*para que los elementos se pongan uno del lado del otro*/
+    justify-content: space-between;
+    /*se pone hacia la derecha*/
+    align-items: center;
+    /*para que se centre el menu*/
+    /* background: #f2f2f2; */ }
+    .contenedor header .logo img {
+      margin: 0 25px;
+      border-radius: 8px; }
+    .contenedor header .menu {
+      display: flex; }
+      .contenedor header .menu li {
+        list-style: none; }
+      .contenedor header .menu a {
+        display: flex;
+        text-decoration: none;
+        margin-right: 40px;
+        font-size: 14px;
+        color: #2c2c2c;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer; }
+        .contenedor header .menu a i {
+          font-size: 18px;
+          color: #C0392B;
+          text-decoration: none; }
+          .contenedor header .menu a i:hover {
+            text-decoration: none; }
+      .contenedor header .menu .cuenta {
+        position: absolute;
+        display: none;
+        list-style: none;
+        width: 200px;
+        background: #fff;
+        -webkit-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75); }
+        .contenedor header .menu .cuenta li a {
+          display: block;
+          color: #1f1f1f;
+          text-decoration: none;
+          padding: 15px 15px 15px 20px;
+          text-align: left;
+          padding: 15px 10px;
+          margin: 5px 8px; }
+        .contenedor header .menu .cuenta .borCuenta {
+          border-bottom: 1px solid #e9e9e9; }
+        .contenedor header .menu .cuenta i {
+          margin-right: 10px; }
+      .contenedor header .menu .menu li:hover .cuenta {
+        display: block;
+        transition: 0.3s; }
+        .contenedor header .menu .menu li:hover .cuenta i {
+          color: #474747; }
+  .contenedor .busqueda {
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    margin: 0 auto; }
+    .contenedor .busqueda .nav_buscar {
+      float: right;
+      margin: 7px; }
+      .contenedor .busqueda .nav_buscar input[type=text] {
+        width: 720px;
+        height: 25px;
+        border-radius: 25px;
+        border: 1px solid #C0392B;
+        padding: 15px 8px; }
+      .contenedor .busqueda .nav_buscar button {
+        background: none;
+        color: #C0392B;
+        float: right;
+        padding: 5px 10px;
+        margin-right: 16px;
+        border: none;
+        cursor: pointer; }
+        .contenedor .busqueda .nav_buscar button i {
+          font-size: 18px; }
+  .contenedor .main {
+    width: 100%;
+    float: right;
+    margin: 0 auto; }
+  
+
+/*# sourceMappingURL=stylee.css.map */

@@ -1,0 +1,246 @@
+@import url(../css/main.css);
+@import url(../css/barra_precio.css);
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'WorkSans-Regular',Arial, Helvetica, sans-serif ; 
+    background: #fff;
+    /*  background-blend-mode: darken; para agregar el color a la imagen de fondo
+    background-size: cover;
+    background-attachment: fixed; */
+}
+.contenedor{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    /* flex-direction: row; */ /*se pone un div a lado del otro*/
+    flex-wrap: wrap; /*los elementos que no caben se pongan abajo*/
+    margin-bottom: 30px;
+    header{
+        width: 100%;
+        padding: 10px 0;
+        margin: 10px 0;
+        display: flex; /*para que los elementos se pongan uno del lado del otro*/
+        flex-direction: row; /*para que los elementos se pongan uno del lado del otro*/
+        justify-content: space-between; /*se pone hacia la derecha*/
+        align-items: center; /*para que se centre el menu*/
+        /* background: #f2f2f2; */
+        .logo{
+            img{
+                margin: 0 25px;
+                border-radius: 8px ;
+            }
+        }
+        .menu{
+            display: flex;
+            li{
+                list-style: none;
+            }
+            a{
+                display: flex;
+                text-decoration: none;
+                margin-right: 40px;
+                font-size: 14px;
+                color: rgb(44, 44, 44);
+                flex-direction: column;
+                -webkit-box-pack: start;
+                justify-content: flex-start;
+                -webkit-box-align: center;
+                align-items: center;
+                position: relative;
+                cursor: pointer;
+                i{
+                    font-size: 18px;
+                    color: #5ccb5f;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+            .cuenta{
+                position: absolute;
+                display: none;
+                list-style: none;
+                width: 200px;
+                background: #fff;
+                -webkit-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
+                box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
+                li a{
+                    display: block;
+                    color: rgb(31, 31, 31);
+                    text-decoration: none;
+                    padding: 15px 15px 15px 20px;
+                    text-align: left;
+                    padding: 15px 10px;
+                    margin: 5px 8px;
+                }
+                .borCuenta{
+                    border-bottom: 1px solid #e9e9e9;
+                }
+                i{
+                    margin-right: 10px;
+                }
+                
+            }
+            .menu li:hover .cuenta{
+                display: block;
+                transition: 0.3s;
+                i{
+                    color: #474747;
+                }
+                
+            }
+            
+        }
+    }
+    .busqueda{
+        color: #000;
+        display: flex;
+        flex-direction: row;
+        font-size: 18px;
+        margin: 0 auto;
+        .nav_buscar{
+            float:right;
+            margin:7px;
+            input[type=text]{
+            width: 720px;
+            height:25px;
+            border-radius:25px;
+            border: 1px solid #5ccb5f;
+            padding: 15px 8px;
+            }
+            button{
+                background: none;
+                color: #5ccb5f;
+                float: right;
+                padding: 5px 10px;
+                margin-right: 16px;
+                border: none;
+                cursor: pointer;
+                i{
+                    font-size: 18px;
+                }
+            } 
+        }
+
+    }
+    .main{
+        width: 80%;
+        float: right;
+        margin-right: 75px;
+    } 
+    /* ----------------------> Filtro Precio */
+    aside{
+        width: 20%;
+        margin: 0 auto;
+        border-radius: 10px;
+        padding: 20px 25px 40px;
+        .slider-precio{
+            border-bottom: 1px solid #5ccb60d2;
+            .filtroPrecio{
+                input[type="submit"]{
+                    color: #fff;
+                    background: #5ccb5f;
+                    margin: 25px 60px;
+                    width: 45%;
+                    padding: 12px 0;
+                    border-radius: 20px;
+                    border: none;
+                    font-size: 15px;
+                    cursor: pointer;
+                    &:hover{
+                        background: #61e922;
+                    }
+                }
+            }
+            .precioEntrada{
+                width: 100%;
+                display: flex;
+                margin: 30px 0 35px;
+                .cajas{
+                    display: flex;
+                    width: 100%;
+                    height: 40px;
+                    align-items: center;
+                    input{
+                        width: 100%;
+                        height: 100%;
+                        outline: none;
+                        font-size: 14px;
+                        margin-left: 5px;
+                        border-radius: 5px;
+                        text-align: center;
+                        border: 1px solid #999;
+                        -moz-appearance: textfield;
+                    }
+                    input[type="number"]::-webkit-outer-spin-button,
+                    input[type="number"]::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                    }
+                }
+                .separador{
+                    width: 50px;
+                    display: flex;
+                    font-size: 19px;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            .slider{
+                height: 5px;
+                position: relative;
+                background: #ddd;
+                border-radius: 5px;
+                .progreso{
+                    height: 100%;
+                    left: 25%;
+                    right: 25%;
+                    position: absolute;
+                    border-radius: 5px;
+                    background: #5ccb5f;
+                }
+            }
+            .rango-input{
+                position: relative;
+                input{
+                    position: absolute;
+                    width: 100%;
+                    height: 5px;
+                    top: -5px;
+                    background: none;
+                    pointer-events: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                }
+                input[type="range"]::-webkit-slider-thumb{
+                    height: 17px;
+                    width: 17px;
+                    border-radius: 50%;
+                    background: #5ccb5f;
+                    pointer-events: auto;
+                    -webkit-appearance: none;
+                    box-shadow: 0 0 6px rgba(0,0,0,0.05);
+                  }
+                  input[type="range"]::-moz-range-thumb{
+                    height: 17px;
+                    width: 17px;
+                    border: none;
+                    border-radius: 50%;
+                    background: #5ccb5f;
+                    pointer-events: auto;
+                    -moz-appearance: none;
+                    box-shadow: 0 0 6px rgba(0,0,0,0.05);
+                }
+            }
+        }
+        
+        
+    } 
+}

@@ -1,0 +1,142 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
+  /*  background-blend-mode: darken; para agregar el color a la imagen de fondo
+  background-size: cover;
+  background-attachment: fixed; */ }
+
+.contenedor {
+  margin: auto;
+  width: 90%;
+  max-width: 1000px; }
+  .contenedor .formulario .registro,
+  .contenedor .formulario .inicio {
+    background: white;
+    width: 450px;
+    margin: 20px auto;
+    padding: 10px;
+    /* --------------------- LOG IN ----------------------------- */ }
+    .contenedor .formulario .registro .centrar,
+    .contenedor .formulario .inicio .centrar {
+      width: 200px;
+      margin-top: 10px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      margin-left: 120px; }
+    .contenedor .formulario .registro p,
+    .contenedor .formulario .inicio p {
+      font: bold;
+      font-size: 16px;
+      margin: 35px 0; }
+    .contenedor .formulario .registro #p1,
+    .contenedor .formulario .inicio #p1 {
+      margin-top: -15px; }
+    .contenedor .formulario .registro #cap,
+    .contenedor .formulario .inicio #cap {
+      margin-left: 60px; }
+    .contenedor .formulario .registro input,
+    .contenedor .formulario .inicio input {
+      display: block; }
+    .contenedor .formulario .registro input[type="text"],
+    .contenedor .formulario .registro input[type="email"],
+    .contenedor .formulario .registro input[type="password"],
+    .contenedor .formulario .inicio input[type="text"],
+    .contenedor .formulario .inicio input[type="email"],
+    .contenedor .formulario .inicio input[type="password"] {
+      background: #e9e9e9;
+      width: 100%;
+      padding: 10px;
+      margin: 20px 0;
+      border-radius: 10px;
+      border: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px; }
+    .contenedor .formulario .registro .g-recaptcha,
+    .contenedor .formulario .inicio .g-recaptcha {
+      text-align: center;
+      display: inline-block; }
+    .contenedor .formulario .registro #btn,
+    .contenedor .formulario .inicio #btn {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer; }
+    .contenedor .formulario .registro .cuentaNormal,
+    .contenedor .formulario .inicio .cuentaNormal {
+      background: #C0392B;
+      color: #fff; }
+      .contenedor .formulario .registro .cuentaNormal:hover,
+      .contenedor .formulario .inicio .cuentaNormal:hover {
+        background: #a14439; }
+    .contenedor .formulario .registro .cuentaFacebook,
+    .contenedor .formulario .inicio .cuentaFacebook {
+      background: #2471A3;
+      color: #fff; }
+      .contenedor .formulario .registro .cuentaFacebook:hover,
+      .contenedor .formulario .inicio .cuentaFacebook:hover {
+        background: #4a9dd4; }
+    .contenedor .formulario .registro #contraseña,
+    .contenedor .formulario .inicio #contraseña {
+      float: right;
+      margin-top: -20px;
+      margin-bottom: 15px;
+      font-size: 14px;
+      text-decoration: none;
+      color: #3f3f3f; }
+      .contenedor .formulario .registro #contraseña:hover,
+      .contenedor .formulario .inicio #contraseña:hover {
+        text-decoration: underline;
+        color: #000; }
+    .contenedor .formulario .registro .conjunto,
+    .contenedor .formulario .inicio .conjunto {
+      position: relative; }
+      .contenedor .formulario .registro .conjunto input[type="email"],
+      .contenedor .formulario .registro .conjunto input[type="password"],
+      .contenedor .formulario .inicio .conjunto input[type="email"],
+      .contenedor .formulario .inicio .conjunto input[type="password"] {
+        width: 100%;
+        border: 1px solid #aaa;
+        margin: 30px 0;
+        outline: none;
+        padding-left: 40px;
+        box-sizing: border-box;
+        transition: 0.3s; }
+        .contenedor .formulario .registro .conjunto input[type="email"]:focus,
+        .contenedor .formulario .registro .conjunto input[type="password"]:focus,
+        .contenedor .formulario .inicio .conjunto input[type="email"]:focus,
+        .contenedor .formulario .inicio .conjunto input[type="password"]:focus {
+          border-color: #3b3b3b;
+          box-shadow: 0 0 8px 0 #3b3b3b; }
+      .contenedor .formulario .registro .conjunto i,
+      .contenedor .formulario .inicio .conjunto i {
+        position: absolute;
+        left: 5px;
+        top: 2px;
+        padding: 9px 8px;
+        color: #aaa;
+        transition: 0.3s; }
+    .contenedor .formulario .registro .botones,
+    .contenedor .formulario .inicio .botones {
+      display: flex;
+      justify-content: space-between; }
+    .contenedor .formulario .registro #accederNormal,
+    .contenedor .formulario .inicio #accederNormal {
+      margin-top: 20px;
+      width: 45%;
+      padding: 12px 0;
+      border-radius: 20px;
+      border: none;
+      font-size: 15px; }
+
+/*# sourceMappingURL=registro.css.map */
